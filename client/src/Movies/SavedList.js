@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 export default function SavedList(props) {
+ const history = useHistory();
   const goHome = () =>{
     history.push('/');
   }
