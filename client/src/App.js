@@ -36,6 +36,9 @@ export default function App () {
       <Route path="/" >
           <MovieList movies={movieList} />      
       </Route>
+      <Route>
+          <Movie />
+      </Route>
     </div>
   );
 }
