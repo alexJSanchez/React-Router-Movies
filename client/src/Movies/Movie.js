@@ -14,6 +14,7 @@ export default function Movie(props) {
       .get(`http://localhost:5001/api/movies/${id}`) // Study this endpoint with Postman
       .then(response => {
         // Study this response with a breakpoint or log statements
+        setMovie(response.data)
         // and set the response data as the 'movie' slice of state
       })
       .catch(error => {
